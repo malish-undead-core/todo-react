@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import Header from './componets/header';
 import Form from './componets/form';
 import TodosList from './componets/todosList';
+import Button from './componets/button/button';
 import './App.css';
 
 const App = () => {
@@ -16,9 +17,10 @@ const App = () => {
   }, [todos])
 
   return (
-    <div className="container">
-      <div className="app-wrapper">
+    <div id="darkBg" className="container">
+      <div id="darkBs" className="app-wrapper">
         <div>
+          <Button />
           <Header />
         </div>
         <div>
